@@ -23,6 +23,10 @@
 		<h2 v-pre>{{ title }}</h2>
 		<button class="btn" @click="title = 'and now i am super good'">Change</button> -->
 
+		<div class="form-control">
+			<input type="text" @keyup.enter="addItem($event)" ref="myInput">
+		</div>
+
 		<ul class="list" v-if="items.length">
 			<li 
 				class="list-item" 
